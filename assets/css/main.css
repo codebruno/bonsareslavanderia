@@ -1,0 +1,140 @@
+:root{
+    --primary-blue: #0e2947;
+}
+
+/* Reset básico */
+* {
+    font-size: 1rem; /* Mantém 14px como base */
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Compensação do scroll para a altura do cabeçalho */
+section {
+    scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
+    }
+}
+
+/* Estilos globais */
+/* :root para cores primárias */
+:root {
+    --primary-blue: #0e2947;
+    --secondary-blue: #e0e5ec;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0px; /* Compensa o header fixo */
+    font-size: 87.5%; /* Base de 14px */
+}
+
+
+
+/* Navbar personalizada */
+.navbar {
+    background-color: var(--secondary-blue); /* Cor primária definida */
+}
+
+/* Logo responsiva */
+.logo {
+    max-width: 200px; /* Limita a largura da logo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Botão do WhatsApp */
+.nav-item .btn-outline-primary {
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    font-weight: bold;
+}
+
+/* Efeito hover no botão do WhatsApp */
+.nav-item .btn-outline-primary:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: #fff; /* Texto branco */
+}
+
+.navbar-nav .nav-link {
+    color: #0e2947 !important; /* Força a cor branca */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #61a8ff !important; /* Força a cor ao passar o mouse */
+}
+
+/* Efeito Parallax */
+.parallax {
+    /* Definindo a imagem como fundo */
+    background-image: url('assets/images/sua-imagem.jpg'); /* Troque pelo caminho da sua imagem */
+    height: 70vh; /* Altura da seção */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto o conteúdo rola */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Cobre toda a área */
+}
+
+/* Estilos adicionais para a seção de serviços */
+
+.card {
+    border: none; /* Remove bordas do card */
+    transition: transform 0.2s; /* Transição ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o card ao passar o mouse */
+}
+
+.faq-item {
+    margin-bottom: 1rem; /* Espaçamento entre os itens */
+}
+
+.faq-button {
+    width: 100%; /* Botão ocupa toda a largura */
+    padding: 1rem; /* Aumenta a área clicável */
+    border: none; /* Remove bordas padrão */
+    background: #1a7a9e; /* Cor de fundo personalizada */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    text-align: left; /* Alinhamento à esquerda */
+    transition: background 0.3s; /* Transição suave para hover */
+}
+
+.faq-button:hover {
+    background: #1e9bb5; /* Cor de fundo ao passar o mouse */
+}
+
+.faq-answer {
+    padding: 1rem; /* Espaçamento interno para a resposta */
+    background: rgba(255, 255, 255, 0.1); /* Fundo suave para as respostas */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    margin-top: 0.5rem; /* Espaço acima da resposta */
+}
+
+#reviewsCarousel .carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}

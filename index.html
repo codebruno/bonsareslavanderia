@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bons Ares Lavanderia</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Links para Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- Link para Awesome Icons (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link para Bootstrap Icons (ícones) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Links para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo global para controle do tamanho da fonte */
+        html {
+            font-size: 87.5%; /* 1rem = 14px */
+            scroll-behavior: smooth; /* Rolagem suave */
+        }
+
+         /* Estilo para a imagem ser responsiva */
+         .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho fixo com barra de navegação -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo da Lavanderia -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/image/logo.svg" alt="Bons Ares Lavanderia" class="logo">
+            </a>
+            
+        <!-- Botão do menu mobile -->
+        <button class="navbar-toggler navbar-toggler-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background: #0e2947;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Menu de navegação -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Alinha o menu à direita -->
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#contact">Contato</a>
+                    </li>
+                    <!-- Botão do WhatsApp -->
+                    <li class="nav-item">
+                        <a href="https://wa.me/47988556516?text=Olá!%20Estou%20interessado%20nos%20serviços%20da%20lavanderia." target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-telephone-forward-fill"></i> (47) 98855-6516
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Seções Main -->
+    <!-- Seção Home com efeito parallax -->
+    <main>
+        <!-- Seção Home com efeito parallax e botão de WhatsApp -->
+        <section id="home" class="position-relative">
+            <!-- Parallax Banner Único -->
+            <div class="parallax d-flex align-items-center justify-content-center" style="height: 70vh; background-image: url('assets/image/banner-home.svg'); background-size: cover; background-position: center;">
+                <div class="text-box text-center bg-dark bg-opacity-50 p-4 rounded">
+                    <h1 class="display-4 text-white mb-3">Cuidamos das Suas Roupas com Excelência</h1>
+                    <p class="lead text-white">Lavagem especializada para cada tipo de tecido.</p>
+                    <!-- Botão de agendamento no WhatsApp -->
+                    <a href="https://wa.me/47988556516?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20para%20lavagem%20de%20roupas." 
+                    target="_blank" class="btn btn-success mt-3">
+                        <i class="bi bi-whatsapp"></i> Agendar Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+         <!-- Seção de Serviços -->
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Nossos Serviços</h2>
+                <div class="row text-center">
+                    <!-- Card 1: Lavagem a Seco -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="bi bi-droplet fs-2"></i> <!-- Ícone Bootstrap -->
+                                <h5 class="card-title">Lavagem a Seco</h5>
+                                <p class="card-text">Remoção de sujeira sem o uso de água, ideal para tecidos delicados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Passadoria -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="bi bi-iron fs-2"></i> <!-- Ícone Bootstrap -->
+                                <h5 class="card-title">Passadoria</h5>
+                                <p class="card-text">Serviço de passar roupas com técnica profissional, deixando tudo impecável.</p>
+                            </div>
+                        </div>
+                        <!-- Botão de agendamento no WhatsApp -->
+                        <a href="https://wa.me/47988556516?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20para%20lavagem%20de%20roupas." 
+                        target="_blank" class="btn btn-success mt-2 text-uppercase fw-bold">
+                            <i class="bi bi-whatsapp"></i> Solicite agora o seu orçamento
+                        </a>
+                    </div>
+                    <!-- Card 3: Lavagem Industrial -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="bi bi-building fs-2"></i> <!-- Ícone Bootstrap -->
+                                <h5 class="card-title">Lavagem Industrial</h5>
+                                <p class="card-text">Serviços em grande escala para empresas e indústrias, com eficiência garantida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="py-5 "> 
+             <!-- Tabela de Preços -->
+             <div class="container">
+                <div class="row align-items-center">
+                        <!-- Tabela de Preços -->
+                    <div class="col-md-6">
+                    <h3 class="mt-5">Tabela de Preços</h3>
+                    <div class="table-responsive mt-3">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Serviço</th>
+                                    <th>Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-info">
+                                    <td>Lavagem a Seco</td>
+                                    <td>R$ 50,00</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>Passadoria</td>
+                                    <td>R$ 30,00</td>
+                                </tr>
+                                <tr class="table-info">
+                                    <td>Lavagem Industrial</td>
+                                    <td>R$ 200,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <!-- Imagem -->
+                    <div class="col-md-6">
+                        <img src="assets/image/banner-lateral.svg" class="img-fluid" alt="Imagem da Lavanderia">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Perguntas Frequentes -->
+        <section id="faq" class="py-5" style="background-color: #0e2947;">
+            <div class="container">
+                <h2 class="text-center text-white mb-4">Perguntas Frequentes</h2>
+                <div class="row">
+                    <!-- Coluna da Esquerda -->
+                    <div class="col-md-6">
+                        <div class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                O que é lavagem a seco?
+                            </button>
+                            <div id="collapseOne" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    A lavagem a seco é um método de limpeza que utiliza solventes em vez de água, ideal para tecidos delicados.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Como funciona o processo de passadoria?
+                            </button>
+                            <div id="collapseTwo" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    O processo de passadoria envolve o uso de ferro quente para eliminar rugas e vincos das roupas, garantindo uma apresentação impecável.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Quais tipos de tecidos podem ser lavados a seco?
+                            </button>
+                            <div id="collapseThree" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Tecidos delicados como seda, lã e algumas misturas sintéticas são adequados para lavagem a seco.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Coluna da Direita -->
+                    <div class="col-md-6">
+                        <div class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Como agendar um serviço?
+                            </button>
+                            <div id="collapseFour" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Você pode agendar um serviço diretamente pelo nosso site ou entrando em contato pelo WhatsApp.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Quais são os horários de atendimento?
+                            </button>
+                            <div id="collapseFive" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Atendemos de segunda a sábado, das 8h às 18h.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                                <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Como funciona o pagamento?
+                                </button>
+                                <div id="collapseSix" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Aceitamos diversas formas de pagamento, incluindo cartões de crédito, débito e dinheiro.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO AVALIAÇÕES DOS CLIENTES -->
+        <section id="reviews" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Avaliações dos Clientes</h2>
+                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row flex-nowrap">
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card1 h-100" style="border: 2px solid #0e2947; background-color: transparent; border-radius: 15px;">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <img src="https://via.placeholder.com/80" alt="Cliente 1" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                            <h5 class="card-title">João da Silva</h5>
+                                            <p class="card-text fs-5 fst-italic">"A equipe da Fritz Higienização fez um excelente trabalho no meu sofá."</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card1 h-100" style="border: 2px solid #0e2947; background-color: transparent; border-radius: 15px;">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <img src="https://via.placeholder.com/80" alt="Cliente 2" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                            <h5 class="card-title">Maria Oliveira</h5>
+                                            <p class="card-text fs-5 fst-italic">"Profissionais qualificados e um ótimo atendimento."</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card1 h-100" style="border: 2px solid #0e2947; background-color: transparent; border-radius: 15px;">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <img src="https://via.placeholder.com/80" alt="Cliente 3" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                            <h5 class="card-title">Carlos Souza</h5>
+                                            <p class="card-text fs-5 fst-italic">"Serviço de qualidade com um ótimo custo-benefício. Recomendo fortemente!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row flex-nowrap">
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card1 h-100" style="border: 2px solid #0e2947; background-color: transparent; border-radius: 15px;">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <img src="https://via.placeholder.com/80" alt="Cliente 4" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                            <h5 class="card-title">Ana Paula</h5>
+                                            <p class="card-text fs-5 fst-italic">"Ótimo serviço e atendimento. Estou muito feliz com o resultado!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card1 h-100" style="border: 2px solid #0e2947; background-color: transparent; border-radius: 15px;">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <img src="https://via.placeholder.com/80" alt="Cliente 5" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                            <h5 class="card-title">Ricardo Mendes</h5>
+                                            <p class="card-text fs-5 fst-italic">"Recomendo a todos! Trabalho excelente!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <div class="card1 h-100" style="border: 2px solid #0e2947; background-color: transparent; border-radius: 15px;">
+                                        <div class="card-body d-flex flex-column text-center">
+                                            <img src="https://via.placeholder.com/80" alt="Cliente 6" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                            <h5 class="card-title">Fernanda Costa</h5>
+                                            <p class="card-text fs-5 fst-italic">"Adorei o trabalho! Meu sofá está como novo!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicadores (Traços) -->
+                    <div class="d-flex justify-content-center mt-4">
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active mx-2" aria-current="true" aria-label="Slide 1" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1" class="mx-2" aria-label="Slide 2" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO SOBRE NÓS -->
+        <!-- SEÇÃO SOBRE NÓS -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Sobre Nós</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <h3 class="fw-bold">Nossa História</h3>
+                        <p class="fs-5">A Lavanderia Bons Ares, fundada em 2010, é referência em serviços de lavanderia de alta qualidade, sempre focada na satisfação do cliente.</p>
+                        <!-- Accordion para Missão, Visão e Valores -->
+                        <div class="accordion" id="aboutAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMission">
+                                    <button class="faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMission" aria-expanded="false" aria-controls="collapseMission">
+                                        <span class="fw-bold">Missão</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseMission" class="accordion-collapse collapse" aria-labelledby="headingMission" data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        Proporcionar serviços de higienização que superem as expectativas dos nossos clientes, garantindo qualidade e eficiência em cada atendimento.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingVision">
+                                    <button class="faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVision" aria-expanded="false" aria-controls="collapseVision">
+                                        <span class="fw-bold">Visão</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseVision" class="accordion-collapse collapse" aria-labelledby="headingVision" data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        Ser a lavanderia de referência em higienização na região, reconhecida pela qualidade dos serviços e pela satisfação dos clientes.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingValues">
+                                    <button class="faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseValues" aria-expanded="false" aria-controls="collapseValues">
+                                        <span class="fw-bold">Valores</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseValues" class="accordion-collapse collapse" aria-labelledby="headingValues" data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled">
+                                            <li>✅ Compromisso com a qualidade</li>
+                                            <li>✅ Atendimento ao cliente excepcional</li>
+                                            <li>✅ Responsabilidade ambiental</li>
+                                            <li>✅ Tradição e inovação</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div id="teamPhotos" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Foto 1 -->
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/500x300" class="d-block w-100" alt="Equipe 1">
+                                </div>
+                                <!-- Foto 2 -->
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/500x300" class="d-block w-100" alt="Equipe 2">
+                                </div>
+                                <!-- Foto 3 -->
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/500x300" class="d-block w-100" alt="Equipe 3">
+                                </div>
+                            </div>
+                            <!-- Indicadores (Traços) -->
+                            <div class="d-flex justify-content-center mt-2">
+                                <button type="button" data-bs-target="#teamPhotos" data-bs-slide-to="0" class="active mx-2" aria-current="true" aria-label="Slide 1" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                                <button type="button" data-bs-target="#teamPhotos" data-bs-slide-to="1" class="mx-2" aria-label="Slide 2" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                                <button type="button" data-bs-target="#teamPhotos" data-bs-slide-to="2" class="mx-2" aria-label="Slide 3" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO BLOG OU DICAS -->
+        <section id="blog" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Dicas de Cuidado com suas Roupas</h2>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card1 h-100">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Dica 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Como Lavar suas Roupas Coloridas</h5>
+                                <p class="card-text">Aprenda a manter suas roupas coloridas vibrantes e sem manchas.</p>
+                                <!-- Botão de agendamento no WhatsApp -->
+                                <a href="https://wa.me/47988556516?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20para%20lavagem%20de%20roupas." 
+                                target="_blank" class="btn btn-success mt-2 text-uppercase fw-bold">
+                                    <i class="bi bi-whatsapp"></i> Solicite agora o seu orçamento
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card1 h-100">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Dica 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Dicas para Secar Roupas</h5>
+                                <p class="card-text">Descubra as melhores práticas para secar suas roupas sem danificá-las.</p>
+                                 <!-- Botão de agendamento no WhatsApp -->
+                                <a href="https://wa.me/47988556516?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20para%20lavagem%20de%20roupas." 
+                                target="_blank" class="btn btn-success mt-2 text-uppercase fw-bold">
+                                    <i class="bi bi-whatsapp"></i> Solicite agora o seu orçamento
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card1 h-100">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Dica 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Como Remover Manchas Difíceis</h5>
+                                <p class="card-text">Aprenda truques para tirar manchas difíceis sem danificar os tecidos.</p>
+                                 <!-- Botão de agendamento no WhatsApp -->
+                                <a href="https://wa.me/47988556516?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20para%20lavagem%20de%20roupas." 
+                                target="_blank" class="btn btn-success mt-2 text-uppercase fw-bold">
+                                    <i class="bi bi-whatsapp"></i> Solicite agora o seu orçamento
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Contato 
+        <section id="contact" class="py-5" style="background-color: #0e2947;">
+            <div class="container">
+                <div class="row">
+                    <!- Mapa 
+                    <div class="col-md-6 mb-4">
+                        <h2 class="text-white mb-4">Nos Encontre</h2>
+                        <!- Embed do Google Maps 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.314113312003!2d-48.8486843245809!3d-26.316326377007705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb18a07f2fb8d%3A0xa4cd64ffad8daf8e!2sBons%20Ares%20Lavanderia%20em%20Joinville!5e0!3m2!1spt-BR!2sbr!4v1729476398747!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!- Informações de Contato 
+                    <div class="col-md-6">
+                        <h2 class="text-white mb-4">Contato</h2>
+                        <p class="text-white">Estamos aqui para ajudar! Entre em contato conosco:</p>
+                        <ul class="list-unstyled text-white">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill"></i> 
+                                R. Anita Garibaldi, 54 - sala 02 - Anita Garibaldi, Joinville - SC, 89203-300
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill"></i> 
+                            (47) 98855-6516
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill"></i> 
+                            contato@lavanderia.com.br
+                        </li>
+                        </ul>
+                            <div class="mt-4">
+                                <a href="https://instagram.com/seu_perfil" target="_blank" class="btn btn-outline-light me-2">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                            <!Adicione mais redes sociais aqui 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <!-- SEÇÃO FOOTER -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>Estamos aqui para ajudar! Entre em contato conosco:</h5>
+                    <p class="mb-1">R. Anita Garibaldi, 54 - sala 02 - Anita Garibaldi, Joinville - SC, 89203-300</p>
+                    <p class="mb-1">(47) 98855-6516</p>
+                    <p class="mb-1">contato@lavanderia.com.br</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Links das Seções</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#sobre" class="text-white">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="text-white">Serviços</a></li>
+                        <li><a href="#avaliacoes" class="text-white">Avaliações</a></li>
+                        <li><a href="#blog" class="text-white">Blog ou Dicas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn btn-primary">Voltar ao Topo</button>
+            </div>
+            <div class="text-center mt-3">
+                <small>© 2024 BHK DevXpert. Todos os direitos reservados.</small>
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=47988556516" class="whatsapp-icon" target="_blank">
+            <i class="bi bi-whatsapp" style="font-size: 2rem; color: white;"></i>
+        </a>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Faz a rolagem ser suave
+            });
+        }
+    </script>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para rolagem suave e colapso do menu -->
+     <script src="assets/js/main.js"></script>
+
+     <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
